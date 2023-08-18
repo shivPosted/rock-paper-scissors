@@ -54,16 +54,21 @@ const gameLogic = function (playerChoice, computerChoice) {
     updateComputerScore.textContent = computerScore;
   }
 };
-
+let timeInt;
+let timeOut;
 const playFunction = function (e) {
-  const timeInt = setInterval(() => {
+  if (timeInt || timeOut) {
+    clearInterval(timeInt);
+    clearTimeout(timeOut);
+  }
+  timeInt = setInterval(() => {
     displayPlayerChoice.src = `img/rock.png`;
     displayComputerChoice.src = `img/rock.png`;
     displayComputerChoice.classList.toggle('transform');
     displayPlayerChoice.classList.toggle('transform');
   }, 500);
 
-  setTimeout(() => {
+  timeOut = setTimeout(() => {
     clearInterval(timeInt);
     const chose = e.target.textContent;
     const rn = Math.floor(Math.random() * 3);

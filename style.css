@@ -74,6 +74,7 @@ img {
 .player-display-score {
   color: #e67e22;
   font-size: 4.4rem;
+  font-weight: 500;
 }
 /*pop-up name*/
 .name-pop-up {
@@ -139,6 +140,8 @@ form input:focus {
 .computer-name {
   position: relative;
   display: inline-block;
+  font-weight: 500;
+  font-size: 4.4rem;
 }
 
 .crown {
