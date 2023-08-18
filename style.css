@@ -28,7 +28,7 @@ body {
   margin: 10rem auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  transition: all 2s;
+  transition: all 1s;
 }
 
 img {
@@ -70,6 +70,11 @@ img {
   grid-column: 3;
 }
 
+.computer-display-score,
+.player-display-score {
+  color: #e67e22;
+  font-size: 4.4rem;
+}
 /*pop-up name*/
 .name-pop-up {
   position: absolute;
@@ -128,4 +133,22 @@ form input:focus {
   /* background-color: rgba(34, 34, 34, 0.3); */
   z-index: 5;
   backdrop-filter: blur(6px);
+}
+
+.player-name,
+.computer-name {
+  position: relative;
+  display: inline-block;
+}
+
+.crown {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(3rem, -1.5rem) rotate(45deg);
+  transition: all 1s;
+}
+.crown-hidden {
+  transform: translate(3rem, -3.5rem);
+  opacity: 0;
 }
