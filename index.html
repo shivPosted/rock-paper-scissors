@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rock-paper-scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <section class="main opacity">
+      <div class="player-score scores">
+        <div class="player-name">Player</div>
+        <div class="score player-score">0</div>
+      </div>
+      <div class="computer-score scores">
+        <div>Computer</div>
+        <div class="score computer-score">0</div>
+      </div>
+      <div class="player-choice"><img src="img/rock.png" alt="" /></div>
+      <div class="computer-choice"><img src="img/rock.png" alt="" /></div>
+      <div class="choose-rock choice">rock</div>
+      <div class="choose-paper choice">paper</div>
+      <div class="choose-scissors choice">scissors</div>
+    </section>
+    <div class="name-pop-up">
+      <h2>What is player's name?</h2>
+      <form action="">
+        <input class="input-player-name" type="text" required />
+      </form>
+      <button class="submit-name">&rightarrow;</button>
+    </div>
+    <div class="overlay"></div>
+  </body>
+</html>
